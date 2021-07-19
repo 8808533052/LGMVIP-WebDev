@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    max-width: 85rem;
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+/* ##########          NAVBAR         ########## */
+header nav{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 2;
+}
+header nav h2{    
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+header nav ul{
+    font-size: 1.5rem;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    margin: 1rem;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+header nav ul li a:hover,
+header nav ul li a:active{
+    color: #f0ed4c;
+}
+
+/* ###########  HEADER PART ########## */
+header .header-part{
+    color: #fff;
+    z-index: 2;
+    margin-top: 8rem;
+    position: relative;
+}
+header .header-part .header-h1{
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+header .header-part .header-p{
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+
+
+
+
+/* #############    utilty classes  ############# */
+.free-l-r{
+    max-width: 85rem;
+    width: 90%;
+    margin: 2rem auto;
+}
+button{
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-style: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 0.8rem;
+}
+.btn1{
+    background-color: #fff000;
+}
+.btn2{
+    background-color: #523452;
+    color: #fff;
+}
+.mr-b-5{
+    margin-bottom: 7rem;
+}
+h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 5rem auto;
+}
+.ver-line{
+    height: 18rem;
+    border: 0.1rem solid grey;
+}
+.mr-b-1{
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+/* ##########  header images    ######### */
+header .images{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 85vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .images input{
+    display: none;
+}
+header .images img{
+    width: 100%;
+    height: 100%;
+}
+
+header .header-part .radioBTN{
+    display: flex;
+    position: absolute;
+    top: 55vh;
+}
+header .header-part .radioBTN label{
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.6rem solid rgba(255, 255, 255, 0.521);
+    border-radius: 50%;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+header .header-part .radioBTN label:hover{
+    transform: scale(1.4);
+    border: 0.6rem solid white;
+}
+#img1:checked ~ .img1{
+    margin-left: 0;
+}
+#img2:checked ~ .img2{
+    margin-left: -100%;
+}
+#img3:checked ~ .img3{
+    margin-left: -200%;
+}
+#img4:checked ~ .img4{
+    margin-left: -300%;
+}
+
+/* #############  PROJECT SECTION ######### */
+.section1 .section1_h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.section1 .section1_p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1 .section1_p p{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.section1 .section1_p img{
+    height: 20rem;
+    width: 40rem;
+}
+
+/* ############    project section boxes    ########## */
+.section1 .section1-box{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem;
+}
+.section1 .section1-box img{
+    background-color: #523452;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+.section1 .section1-box h2{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.section1 .section1-box p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+hr{
+    margin: 8rem 0;
+    border: 1px solid #523452;
+}
+
+
+/* ##########   project section   ######## */
+.project .pro-boxes{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(194, 184, 184);
+}
+.project .pro-boxes .pro-box{
+    width: 25%;
+}
+.project .pro-boxes .pro-box img{
+    width: 100%;
+    height: 35rem;
+}
+.project .pro-box .pro-details{
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+.project .pro-box .pro-details h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;    
+    margin-bottom: 0.5rem;
+}
+.project .pro-box .pro-details p{
+    font-size: 1.2rem;
+    color: rgb(49, 45, 45);
+    margin-bottom: 0.8rem;
+}
+.project .pro-box .pro-details:hover{
+    background-color: #fff000;
+}
+.project .pro-box .pro-details button:hover{
+    background-color: #523452;
+    color: #fff;
+}
+
+/* #########  PRICE SECTION DESIGN   ####### */
+.price .plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price .plan .plan-box{
+    padding: 1.8rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.price .plan .plan-box h6{
+    font-size: 1.4rem;
+    color: grey;
+}
+.price .plan .plan-box h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.price .plan .plan-box p{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+
+/* #######  VIDEO SECTION  ####### */
+.vid-pro{
+    position: relative;
+    background-color: #523452;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vid-pro video{
+    max-width: 85rem;
+    width: 70%;
+    margin: 2rem auto;
+}
+.vid-pro .thumbnail ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    transform: translate(-50%);
+}
+.vid-pro .thumbnail ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 1rem;
+}
+.vid-pro .thumbnail ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 1rem;
+}
+#thumbVid{
+    position: relative;
+    bottom: 1rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+}
+
+
+
+/* ############    team section   ######### */
+.teams{
+    margin-bottom: 5rem;
+}
+.teams .team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.teams .team .member{
+    position: relative;
+    text-align: center;
+}
+.teams .team .member img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin: 1rem 3rem;
+    cursor: pointer;
+}
+.teams .team .member .links{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.teams .team .member .links i{
+    margin: 0 1.2rem;
+    display: none;
+    color: #ffff;
+}
+.teams .team .member h3{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
+}
+.teams .team .member img:hover ~ .links i, .teams .team .member img:hover{
+    display: inline;
+    filter: saturate(10%);
+}
+
+
+
+/* ##########   LIFE SECTION ######### */
+.zippy-life{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.zippy-life .zippy-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 85rem;
+    width: 70%;
+    margin: 2rem auto;
+}
+.zippy-life .small-img ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    transform: translate(-50%);
+}
+.zippy-life .small-img ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 1rem;
+}
+.zippy-life .small-img ul li img{
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+}
+
+
+/* #############  LETTER SECTION   ######### */
+.letter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-image: url(../images/letter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.letter h2{
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.letter form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.letter form input{
+    width: 40vw;
+    height: 4rem;
+    margin: 1rem 0;
+    padding: 0 1.2rem;
+    outline: none;
+    border: none;
+}
+.letter form button{
+    margin: 0;
+    height: 4rem;
+    margin: 1rem 0;
+    background-color: #fff000;
+    color: black;
+    cursor: pointer;
+}
+
+       /* ###### blog section  ####### */
+.blog .blog-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog .blog-content{
+    padding: 1rem;
+    text-align: center;
+}
+.blog .blog-content img{
+    height: 15rem;
+}
+.blog .blog-content h2{
+    font-size: 1.7rem;
+}
+.blog .blog-content h4{
+    font-size: 1.3rem;
+    color: #808080;
+}
+.blog .blog-content h4{
+    font-size: 1.3rem;
+    color: #808080;
+}
+.blog .blog-content p{
+    font-size: 1.5rem;
+}
+.blog .blog-content button:hover{
+    background-color: #fff000;
+}
+
+/* ########  contact  section   ###### */
+.contact{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: #fff000;
+}
+.contact img{
+    width: 50%;
+    height: 100%;
+}
+.contact .contact-form{
+    width: 50%;
+    position: relative;
+}
+.contact .contact-form form{
+    position: absolute;
+    max-width: 85rem;
+    width: 80%;
+    height: 100%;
+    margin: auto 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+.contact .contact-form form h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+.contact .contact-form label{
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    display: block;
+}
+.contact .contact-form input{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.contact .contact-form form textarea{
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+/* #######   footer section   ##### */
+footer{
+    height: 8vh;
+}
+footer .footer-part{
+    height: 10rem;
+    padding: 1rem 8rem;
+    display: flex;
+    flex-basis: 3rem;
+    /* justify-content: space-between; */
+}
+footer .footer-part h2{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+footer .footer-part p{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+}
+footer .footer-part .f-office{
+    font-size: 1.4rem;
+    text-align: center;
+}
+footer .footer-part .f-follow i{
+    padding: 1rem 1.7rem;
+    color: #2e2b2b;
+}
+footer .footer-part .f-follow i:hover{
+    cursor: pointer;
+    color: rgb(72, 151, 72);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    html {
+      font-size: 70%;
+    }
+    #thumbVid{
+        position: relative;
+        bottom: 0.5rem;
+        border: 0.3rem solid black;
+        border-radius: 1rem;
+    }
+    .vid-pro video{
+        width: 90%;
+        height: auto;
+        margin: 1rem auto;
+    }
+    .vid-pro .thumbnail ul{
+        bottom: 1rem;
+    }
+
+    .zippy-life .zippy-box{
+        width: 90%;
+        height: auto;
+    }
+    .zippy-life .small-img ul{
+        bottom: 0.5rem;
+    }
+
+  }
+ @media only screen and (max-width: 992px)
+ {
+     html{
+        font-size: 50%;
+     }
+    #thumbVid{
+        position: relative;
+        bottom: 0.5rem;
+        border: 0.2rem solid black;
+        border-radius: 1rem;
+    }
+    .vid-pro video{
+        width: 95%;
+        height: auto;
+        margin: 1rem auto;
+    }
+    .vid-pro .thumbnail ul{
+        bottom: 1rem;
+    }
+
+
+    .zippy-life .zippy-box{
+        width: 95%;
+        height: auto;
+        margin: 2rem auto;
+    }
+    .zippy-life .small-img ul{
+        bottom: 0.5rem;
+    }
+ }
+
+
